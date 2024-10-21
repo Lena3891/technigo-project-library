@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Don't forget to connect the CSS file -->
-  <title>Library</title>
-</head>
-<body>
-  <h1>Library</h1>
-  <!-- Don't forget to connect the JavaScript file -->
-</body>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bücherbibliothek</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DIGITALE BÜCHERBIBLIOTHEK</h1>
+    </header>
+    <main>
+      <section id="controls">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Nach Büchern suchen..."
+        />
+        <select id="filter-genre">
+          <option value="">Filter nach Genre</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-Fiction">Non-Fiction</option>
+          <option value="Science Fiction">Science Fiction</option>
+        </select>
+        <select id="sort-by">
+          <option value="">Sortieren nach</option>
+          <option value="year-asc">Erscheinungsjahr (Älteste zuerst)</option>
+          <option value="year-desc">Erscheinungsjahr (Neueste zuerst)</option>
+          <option value="rating-asc">Bewertung (Niedrig nach Hoch)</option>
+          <option value="rating-desc">Bewertung (Hoch nach Niedrig)</option>
+        </select>
+        <button id="random-book">Zufälliges Buch</button>
+      </section>
+      <section id="book-list"></section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

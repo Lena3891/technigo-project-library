@@ -1,3 +1,62 @@
 body {
-  background: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("/books-images/unknown.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px; /* Erhöhen Sie diesen Wert für ein größeres Bild */
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 45px;
+}
+
+main {
+  padding: 2rem;
+}
+
+#controls {
+  margin-bottom: 2rem;
+}
+
+select,
+button {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+#book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  line-height: normal;
+}
+.book-card {
+  border: 1px solid #5b5454;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book-cover {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
