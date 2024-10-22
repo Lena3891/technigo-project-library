@@ -26,7 +26,7 @@ header {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 60px;
 }
 
 /* Main content styles */
@@ -187,9 +187,7 @@ footer p {
   header {
     height: 300px;
   }
-  h1 {
-    font-size: 2rem;
-  }
+
   .book-cover {
     width: 125px;
     height: 180px;
